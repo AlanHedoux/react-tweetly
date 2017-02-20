@@ -1,0 +1,17 @@
+ .tweet {
+    margin: 0 auto;
+    width: 1080px;
+}
+
+.avatar {
+    width: 140px;
+    float: left;
+}
+
+.avatar img {
+	width: 100px;
+}
+
+.infos {
+	padding-top: 47px;
+}
