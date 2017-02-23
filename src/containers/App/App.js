@@ -4,19 +4,17 @@ import './App.css';
 import { tweets } from '../../constants';
 import Tweet from '../../components/Tweet';
 import Home from '../../containers/Home';
-
+import TweetBox from '../../components/TweetBox';
 const App = () => (
 	<Home>
-		<Tweet 
-		  avatar={tweets[1].avatar}
-		  username={tweets[1].username}
-		  content={tweets[1].content}
-		/>
-		<Tweet 
-		  avatar={tweets[0].avatar}
-		  username={tweets[0].username}
-		  content={tweets[0].content}
-		/>
+		{tweets.map( (tweet, index) => (
+			<Tweet 
+				key={index}
+				{...tweet}
+			 />
+		) )}
+		<TweetBox />
+
 	</Home>
 );
 

@@ -10,6 +10,7 @@ const Tweet = props => (
 		<div className='infos'>
 			<strong>{props.username}</strong>
 			<p>{props.content}</p>
+			<p>{props.date}</p>
 		</div>
 	</div>
 );
